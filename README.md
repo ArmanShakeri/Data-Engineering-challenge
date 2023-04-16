@@ -10,7 +10,10 @@ This Python code is for Data Engineering challenge. Points to consider:
 # Step to run
 
 **Step 1**
-install python3.10 and packages in requirement.txt
+install python3.10 and packages in requirements.txt
+```
+pip3 install -r requirements.txt
+```
 
 **Step 2**
 place impression and click files in input directory.

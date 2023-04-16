@@ -26,8 +26,7 @@ click_schema = {
     "required": ["impression_id","revenue"],
 }
 
-impression_filepath="input"
-clicks_filepath="input"
+input_path="input"
 
 logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s')
 logger=logging.getLogger(__name__)
@@ -71,8 +70,8 @@ def main():
     except Exception as e:
         logger.error(e.__str__())
 
-    impression_fullPath = [os.path.join(impression_filepath,fPath) for fPath in impression_files]
-    click_fullPath = [os.path.join(clicks_filepath,fPath) for fPath in click_files]
+    impression_fullPath = [os.path.join(input_path,fPath) for fPath in impression_files]
+    click_fullPath = [os.path.join(input_path,fPath) for fPath in click_files]
 
     impression_df=json_parser(impression_fullPath,impression_schema)
     clicks_df=json_parser(click_fullPath, click_schema)
