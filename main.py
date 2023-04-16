@@ -26,8 +26,8 @@ click_schema = {
     "required": ["impression_id","revenue"],
 }
 
-impression_filepath="input/impressions"
-clicks_filepath="input/clicks"
+impression_filepath="input"
+clicks_filepath="input"
 
 logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s')
 logger=logging.getLogger(__name__)
