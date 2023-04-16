@@ -1,9 +1,9 @@
 # Data-Engineering-challenge
 
 This Python code is for Data Engineering challenge. Points to consider:
-- The given impressions sample file has many duplicate records and my assumtion was that "id" column must be uniqe so I used distict and I droped duplicated records.
+- The given impressions sample file has many duplicate records and my assumption was that "id" column must be unique so I used distinct and I dropped duplicated records.
 - Based on json schema some records are ignored and they are displayed on console as a warning when the code is executed.
-- In the final result of section 2, clicks count of some aggregated records are greater than count of impressions and it is known that it doesn't seem logical, so I assumed there are some inconsistencies in the given sample file or I am not familiar with the logic behind it.
+- In the final result of section 2, clicks count of some aggregated records are greater than count of impressions and it is known that it doesn't seem logical, so I assumed either there are some inconsistencies in the given sample file or I am not familiar with the logic behind it.
 - The input files must be placed in the input directory.
 - the result of the challenge will be placed in the output directory.
 
